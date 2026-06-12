@@ -1,4 +1,35 @@
 /* Custom Styles */
+body,
+.font-sans {
+  font-family: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Navbar hover dropdown */
+.nav-dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  margin-top: -1px;
+  z-index: 50;
+}
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-item:hover .nav-trigger [data-lucide="chevron-down"] {
+  transform: rotate(180deg);
+}
+
 @layer utilities {
   .gradient-text {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -305,9 +336,7 @@
 
 /* Notification banner */
 .notification-banner {
-  background: linear-gradient(90deg, #ec4899, #8b5cf6, #3b82f6);
-  background-size: 200% 100%;
-  animation: gradientMove 3s ease infinite;
+  background: linear-gradient(90deg, #f9531e, #e0245e, #b026c4, #6d28d9);
 }
 
 @keyframes gradientMove {
