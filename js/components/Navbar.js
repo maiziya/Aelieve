@@ -89,9 +89,8 @@ function renderDropdownColumns(columns) {
 function renderNavItem(item) {
   return `
     <div class="nav-item relative flex items-center h-20">
-      <button class="nav-trigger flex items-center gap-1 text-base text-gray-800 hover:text-gray-900 transition-colors font-medium">
+      <button class="nav-trigger flex items-center text-base text-gray-800 hover:text-gray-900 transition-colors font-medium">
         ${item.label}
-        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 transition-transform"></i>
       </button>
       <div class="nav-dropdown absolute left-0 top-full bg-white border border-gray-100 rounded-xl shadow-xl p-6 flex gap-10">
         ${renderDropdownColumns(item.columns)}
