@@ -7,6 +7,24 @@
   scrollbar-width: none;
 }
 
+/* Navbar hover dropdown */
+.nav-dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  margin-top: -1px;
+  z-index: 50;
+}
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-item:hover .nav-trigger [data-lucide="chevron-down"] {
+  transform: rotate(180deg);
+}
+
 @layer utilities {
   .gradient-text {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
