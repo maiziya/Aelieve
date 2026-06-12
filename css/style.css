@@ -313,9 +313,7 @@
 
 /* Notification banner */
 .notification-banner {
-  background: linear-gradient(90deg, #ec4899, #8b5cf6, #3b82f6);
-  background-size: 200% 100%;
-  animation: gradientMove 3s ease infinite;
+  background: linear-gradient(90deg, #f9531e, #e0245e, #b026c4, #6d28d9);
 }
 
 @keyframes gradientMove {
