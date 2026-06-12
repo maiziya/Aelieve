@@ -1,4 +1,12 @@
 /* Custom Styles */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @layer utilities {
   .gradient-text {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
