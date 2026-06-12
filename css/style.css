@@ -1,4 +1,9 @@
 /* Custom Styles */
+body,
+.font-sans {
+  font-family: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

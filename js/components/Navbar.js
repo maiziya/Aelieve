@@ -88,8 +88,8 @@ function renderDropdownColumns(columns) {
 
 function renderNavItem(item) {
   return `
-    <div class="nav-item relative flex items-center h-20">
-      <button class="nav-trigger flex items-center text-base text-gray-800 hover:text-gray-900 transition-colors font-medium">
+    <div class="nav-item relative flex items-center h-16">
+      <button class="nav-trigger flex items-center text-sm text-gray-900 hover:text-gray-600 transition-colors font-normal">
         ${item.label}
       </button>
       <div class="nav-dropdown absolute left-0 top-full bg-white border border-gray-100 rounded-xl shadow-xl p-6 flex gap-10">
@@ -132,11 +132,11 @@ function renderMobileLinks() {
 
 function renderLogo() {
   return `
-    <a href="#" class="flex items-center gap-3">
-      <span class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center">
-        <i data-lucide="navigation" class="w-5 h-5 text-white -rotate-12"></i>
+    <a href="#" class="flex items-center gap-2.5">
+      <span class="w-9 h-9 rounded-full bg-gray-900 flex items-center justify-center">
+        <i data-lucide="navigation" class="w-4 h-4 text-white -rotate-12"></i>
       </span>
-      <span class="text-2xl tracking-[0.45em] font-light text-gray-900">AELIEVE</span>
+      <span class="text-xl tracking-[0.4em] font-light text-gray-900">AELIEVE</span>
     </a>
   `;
 }
@@ -145,25 +145,25 @@ export const Navbar = {
   render() {
     return `
       <header id="navbar" class="sticky top-0 z-40 bg-white border-b border-gray-100">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center h-20">
+        <nav class="w-full px-6 lg:px-8">
+          <div class="flex items-center h-16">
             ${renderLogo()}
 
-            <div class="hidden md:flex items-center gap-8 ml-12">
+            <div class="hidden md:flex items-center gap-7 ml-8">
               ${renderNavLinks()}
             </div>
 
-            <div class="flex items-center gap-6 ml-auto">
-              <button class="hidden sm:flex items-center justify-center text-gray-800 hover:text-gray-900" aria-label="Search">
-                <i data-lucide="search" class="w-6 h-6"></i>
+            <div class="flex items-center gap-5 ml-auto">
+              <button class="hidden sm:flex items-center justify-center text-gray-900 hover:text-gray-600" aria-label="Search">
+                <i data-lucide="search" class="w-5 h-5"></i>
               </button>
-              <button class="hidden sm:flex items-center justify-center text-gray-800 hover:text-gray-900" aria-label="Call us">
-                <i data-lucide="phone" class="w-6 h-6"></i>
+              <button class="hidden sm:flex items-center justify-center text-gray-900 hover:text-gray-600" aria-label="Call us">
+                <i data-lucide="phone" class="w-5 h-5"></i>
               </button>
-              <a href="#" class="hidden sm:inline-flex items-center text-base font-medium border border-gray-300 rounded-md px-6 py-3 hover:bg-gray-50 transition-colors">
+              <a href="#" class="hidden sm:inline-flex items-center text-sm font-normal border border-gray-300 rounded-md px-5 py-2.5 hover:bg-gray-50 transition-colors">
                 Free Marketing Plan
               </a>
-              <button id="mobile-menu-btn" class="md:hidden text-gray-800" aria-label="Open menu">
+              <button id="mobile-menu-btn" class="md:hidden text-gray-900" aria-label="Open menu">
                 <i data-lucide="menu" class="w-7 h-7"></i>
               </button>
             </div>
